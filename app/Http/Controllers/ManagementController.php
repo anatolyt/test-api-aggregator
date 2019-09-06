@@ -11,7 +11,8 @@ class ManagementController extends Controller
     {
         $result = $managementService->aggregateRequest();
 
-        var_dump($result); exit;
+        return response(json_encode($result), 200)
+            ->header('Content-Type', 'application/json');
     }
 
 }

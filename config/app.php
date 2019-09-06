@@ -1,6 +1,5 @@
 <?php
 
-use App\Providers\AuthPaypalServiceProvider;
 
 return [
 
